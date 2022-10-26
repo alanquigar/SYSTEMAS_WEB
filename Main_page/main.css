@@ -1,0 +1,136 @@
+/*GENERAL*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    background: var(--primarycolor);
+}
+:root{
+    --primarycolor:rgb(243, 238, 238);
+    --secondarycolor:#045be6;
+}
+
+/*NAVBAR*/
+.navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/*LEFT NAVBAR*/
+.logo img{
+    width: 50px;
+    transition: transform 1s;
+}
+.logo img:hover{
+    transform: scale(1.3);
+}
+
+/*MAIN NAVBAR*/
+.main-nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+    right: 10px;
+    transition: transform .8s ease;
+}
+.main-nav ul li::after{
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: -20px;
+    right: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: var(--secondarycolor);
+}
+.main-nav ul li:hover::after{
+    width: 5px;
+    height: 5px;
+}
+
+/*RIGHT NAVBAR*/
+
+
+/*SEARCH*/
+input{
+    outline: none;
+    background: transparent;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+}
+::placeholder{
+    font-weight: 800;
+}
+
+/*MAIN*/
+.textarea{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.textarea ul li{
+    display: inline-block;
+    color: #045be6;
+    padding: 10px;
+}
+
+.button{
+    outline: 1px solid #045be6;
+    background: #045be6;
+    outline-offset: 1px;
+    border-radius:2px;
+    margin-right: 10px;
+    position: relative;
+    left: -15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button input{
+    color: #fff;
+}
+.button i{
+    color: #fff;
+}
+
+/*ETIQUETAS*/
+textarea{
+    border: none;
+    outline: 2px solid #045be6;
+    border-radius: 2px;
+    resize: none;
+    padding: 10px;
+    height: 100px;
+    background: rgb(247, 244, 244);
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: var(--secondarycolor);
+}
+img{
+    width: 30px;
+}

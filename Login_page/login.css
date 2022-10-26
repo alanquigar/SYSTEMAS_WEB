@@ -1,0 +1,103 @@
+/*GENERAL*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+}
+/*VARIABLES CSS*/
+:root{
+    --primarycolor:#fff;
+    --secondarycolor:#045be6;
+    --background:rgb(243, 238, 238);
+    --hover:#1351b6;
+    --links:#307efc;
+}
+
+/*FORMULARIO*/
+.form{
+    background: var(--primarycolor);
+    padding: 100px 35px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0,0.1);
+}
+.form button{
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+.form h1{
+    margin-bottom: 50px;
+    color: var(--secondarycolor);
+    font-size: 50px;
+    font-family:monospace;
+    text-align: center;
+    cursor: default;
+}
+.form span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+/*INPUT*/
+.input_box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    background: var(--primarycolor);
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    width: 250px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+.input_box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 200px;
+    font-family: 'Roboto Mono', monospace;
+}
+::placeholder{
+    font-weight: 600;
+}
+
+/*BOTON*/
+.btn_box button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--secondarycolor);
+    border-radius: 5px;
+    margin-top: 30px;
+    height: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
+}
+.btn_box button:hover{
+    background: var(--hover);
+}
+.btn_box button a{
+    color: var(--primarycolor);
+}
+
+/*ETIQUETAS*/
+a{
+    text-decoration: none;
+    color: var(--links);
+}
+
